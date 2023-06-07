@@ -1,4 +1,5 @@
 import uvicorn
+from models.user import User
 
 
 def main():
@@ -9,4 +10,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
