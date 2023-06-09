@@ -19,3 +19,6 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+session = next(get_db())
