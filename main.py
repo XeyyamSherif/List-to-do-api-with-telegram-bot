@@ -1,10 +1,12 @@
 import uvicorn
 
+from api.to_do_item import to_do_router
 from api.user import user_router
 from app.server import app
-from models.user import User
 
 app.include_router(user_router)
+app.include_router(to_do_router)
+
 
 def main():
     uvicorn.run(
